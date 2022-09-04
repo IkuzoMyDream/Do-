@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+button:hover {
+  cursor: pointer
+}
+
+.btn-new-task {
+  float: right;
+  margin: 10px;
+  background-color: #0d6efd;
+  padding: 10px 15px;
+  color: white;
+  font-family: helvetica, arial, sans-serif;
+  border-radius: 4px;
+  font-weight: 500;
+  border: none;
+}
+
+#board {
+  /* padding:10px 30px 30px; */
+  margin-top: 10px;
+  overflow-y: visible;
+}
+
+.text p {
+  font-family: Comic Sans, helvetica, arial, sans-serif;
+}
+
+.note {
+  float: left;
+  display: block;
+  position: relative;
+  padding: 1em;
+  width: 300px;
+  min-height: 300px;
+  margin: 20px 10px 10px 10px;
+  background: linear-gradient(top, rgba(0, 0, 0, .05), rgba(0, 0, 0, .25));
+  background-color: #FFFD75;
+  box-shadow: 5px 5px 10px -2px rgba(33, 33, 33, .3);
+  transform: rotate(2deg);
+  transform: skew(-1deg, 1deg);
+  transition: transform .15s;
+  z-index: 1;
+}
+
+.note:hover {
+  cursor: move;
+}
+
+.note::before {
+  content: '';
+  position: absolute;
+  display: block;
+  background-color: rgb(108, 230, 120);
+  width: 120px;
+  height: 35px;
+  left: 50%;
+  top: -15px;
+  transform: translate(-50%) rotate(3deg);
+}
+
+textarea {
+  background-color: transparent;
+  border: none;
+  resize: vertical;
+  font-family: "Gloria Hallelujah", cursive;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+textarea:focus {
+  outline: none;
+  border: none;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, .2) inset;
+}
+
+.note-title {
+  resize: none;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #000000;
+  height: 64px;
+  margin-top: 20px;
+}
+
+.note-description {
+  font-size: 12pt;
+  height: 150px
+}
+
+/* trash bin */
+.trashbin {
+  margin: auto;
+  width: 10%;
+  position: absolute;
+  bottom: 100px;
+  left:0;
+  right:0;
+  z-index: 99;
+  display: none;
+  border: solid
+}
+
+.active {
+  display: block
+}
+
+/* #Lid1 {
+  transform-box: fill-box;
+  transform-origin: right bottom;
+  animation: rotateL1 4s infinite ease-in-out;
+} */
+
+.wrapper svg:not(:root),
+svg {
+  overflow: visible;
+}
+
+@keyframes rotateL1 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  65% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* .body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: blur(100%);
+  margin:0 !important;
+  padding:0 !important
+} */
