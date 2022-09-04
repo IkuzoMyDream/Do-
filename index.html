@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Do!</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <!-- background -->
+      <video
+        class="back-vdo"
+        autoplay
+        loop
+        muted
+        plays-inline
+        src="rain.mp4"
+      ></video>
+      <!-- button float right -->
+      <button class="btn-new-task">Add New Task</button>
+
+      <div id="board">
+        <!-- <div class="note draggable">
+        <div class="text">
+          <textarea
+            class="note-title"
+            placeholder="Enter note title"
+            maxlength="50"
+          ></textarea>
+          <textarea
+            class="note-description"
+            placeholder="Enter note description here"
+          ></textarea>
+        </div>
+      </div> -->
+      </div>
+
+      <!-- trashbin -->
+      <div class="trashbin">
+        <svg
+          version="1.1"
+          id="GarbageBin1"
+          xmlns="http://www.w3.org/2000/svg"
+          x="0"
+          y="0"
+          viewBox="0 0 14 17.1"
+          xml:space="preserve"
+        >
+          <style>
+            .st0 {
+              fill: #034f84;
+            }
+          </style>
+          <path
+            class="st0"
+            d="M0 3.1l1 12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2l1-12H0zm4 11.8c0 .3-.2.5-.5.5s-.5-.2-.5-.5V4.8c0-.3.2-.5.5-.5s.5.2.5.5v10.1zm3.6 0c0 .3-.2.5-.5.5s-.5-.2-.5-.5V4.8c0-.3.2-.5.5-.5s.5.2.5.5v10.1zm3.6.2c0 .3-.2.5-.5.5s-.5-.2-.5-.5V4.9c0-.3.2-.5.5-.5s.5.2.5.5v10.2z"
+          />
+          <path
+            id="Lid1"
+            class="st0"
+            d="M10.5 1.1h-.1L9.4 0H4.6l-1 1.1H0v1h14v-1z"
+          />
+        </svg>
+      </div>
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
